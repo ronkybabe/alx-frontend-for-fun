@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""
+'''
 This is a script to convert a Markdown file to HTML.
 
 Usage:
@@ -11,7 +11,7 @@ Arguments:
 
 Example:
     ./markdown2html.py README.md README.html
-"""
+'''
 
 import argparse
 import pathlib
@@ -19,9 +19,9 @@ import re
 
 
 def convert_md_to_html(input_file, output_file):
-    '''
+    """
     Converts markdown file to HTML file
-    '''
+    """
     # Read the contents of the input file
     with open(input_file, encoding='utf-8') as f:
         md_content = f.readlines()
